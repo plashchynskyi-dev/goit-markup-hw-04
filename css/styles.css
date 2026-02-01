@@ -175,7 +175,6 @@ a {
     color: #404bbf;
 }
 
-.hero-button,
 .contacts-link {
     transition:
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -235,6 +234,7 @@ background-color: #2e2f42;
     display: block;
     margin: 48px auto 0 auto;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-hero-button:hover {
     background-color: #404BBF;
@@ -431,6 +431,7 @@ background-color: #2e2f42;
 .portfolio-card {
     background: #fff;
     width: 360px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-relative {
@@ -459,6 +460,13 @@ position: relative;
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em;
+}
+.portfolio-card:hover .portfolio-card:focus {
+    cursor: pointer;
+        box-shadow:
+            0 2px 1px 0 rgba(46, 47, 66, 0.08),
+            0 1px 1px 0 rgba(46, 47, 66, 0.16),
+            0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .portfolio-card:hover .portfolio-overlay {
     transform: translateY(0);
