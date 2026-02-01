@@ -277,7 +277,7 @@ background-color: #2e2f42;
 }
 
 .features-item {
-    width: calc((100% - 3 * 24px) / 4);
+    width: calc((100% - (24px*3)) / 4);
 }
 
 .visually-hidden {
